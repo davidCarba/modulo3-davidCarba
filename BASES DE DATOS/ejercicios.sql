@@ -153,9 +153,9 @@
 
 -- ejercicio 7.f
 
--- select store_id, concat('$',format(SUM(amount),2)) as USD
+-- select store_id, concat('$ ',format(SUM(amount),2)) as USD
 -- from staff 
--- 	join payment on staff.staff_id=payment.staff_id
+-- 	join payment on staff.staff_id = payment.staff_id
 -- 	group by store_id;
 
 -- ejercicio 7.g
@@ -168,7 +168,7 @@
 
 -- ejercicio 7.h
 
--- select name as Genero , concat('$',format(SUM(amount),2)) as Revenue
+-- select name as Genero ,concat('$ ',format(SUM(amount),2)) as Dinero
 -- from category
 -- 	inner join film_category on category.category_id=film_category.category_id
 -- 	inner join inventory on film_category.film_id=inventory.film_id
@@ -177,3 +177,28 @@
 --     group by Genero
 --     order by SUM(amount) desc
 --     limit 5 
+
+-- ejercicio 8.a
+
+-- create view Top5Generos as(
+-- select name as Genero ,concat('$ ',format(SUM(amount),2)) as Dinero
+-- from category
+-- 	inner join film_category on category.category_id=film_category.category_id
+-- 	inner join inventory on film_category.film_id=inventory.film_id
+-- 	inner join rental on inventory.inventory_id=rental.inventory_id
+-- 	inner join payment on rental.rental_id=payment.rental_id
+--     group by Genero
+--     order by SUM(amount) desc
+--     limit 5 
+-- 	); 
+
+-- ejercicio 8.b
+
+-- select * from Top5Generos
+
+-- ejercicio 8.c
+
+-- drop view Top5Generos;
+
+
+
