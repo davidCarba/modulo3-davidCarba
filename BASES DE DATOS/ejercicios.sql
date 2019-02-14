@@ -198,7 +198,7 @@
 
 -- ejercicio 8.c
 
--- drop view Top5Generos;
+-- drop view Top5Generos
 
 
 
