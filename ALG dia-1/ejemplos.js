@@ -40,33 +40,33 @@
 //   }
 // }
 
-// console.log(is_creditCard("378282246310006"));
+console.log(is_creditCard("378282246310006"));
 
-// console.log(is_creditCard("37828224630006"));
+console.log(is_creditCard("37828224630006"));
 
-// ejemplo3
+ejemplo3;
 
-// function valid_email(str) {
-//   var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-//   if (mailformat.test(str)) {
-//     console.log("Valid email address!");
-//   } else {
-//     console.log("You have entered an invalid email address!");
-//   }
-// }
+function valid_email(str) {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (mailformat.test(str)) {
+    console.log("Valid email address!");
+  } else {
+    console.log("You have entered an invalid email address!");
+  }
+}
 
-// valid_email("me-info@example.com");
+valid_email("me-info@example.com");
 
-// ejemplo4
+ejemplo4;
 
-// function count_words(str1) {
-//   //exclude  start and end white-space
-//   str1 = str1.replace(/(^\s*)|(\s*$)/gi, "");
-//   //convert 2 or more spaces to 1
-//   str1 = str1.replace(/[ ]{2,}/gi, " ");
-//   // exclude newline with a start spacing
-//   str1 = str1.replace(/\n /, "\n");
-//   console.log(str1.split(" ").length);
-// }
-// let frase = "Me encata   la    fruta  gratis";
-// count_words(frase);
+function count_words(str1) {
+  //exclude  start and end white-space
+  str1 = str1.replace(/(^\s*)|(\s*$)/gi, "");
+  //convert 2 or more spaces to 1
+  str1 = str1.replace(/[ ]{2,}/gi, " ");
+  // exclude newline with a start spacing
+  str1 = str1.replace(/\n /, "\n");
+  console.log(str1.split(" ").length);
+}
+let frase = "Me encata   la    fruta  gratis";
+count_words(frase);
