@@ -116,7 +116,3 @@ let Torremolinos = new Battlefield(sector, sector2);
 army.listaNaves[0].shoot(sector2, 3);
 army.listaNaves[0].shoot(sector2, 3);
 army.listaNaves[0].shoot(sector2, 3);
-army.listaNaves[0].shoot(sector2, 3);
-army.listaNaves[0].shoot(sector2, 3);
-army.listaNaves[0].shoot(sector2, 3);
-army.listaNaves[0].shoot(sector2, 3);
